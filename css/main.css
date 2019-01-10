@@ -19,7 +19,8 @@ header{
     width: 80%;
     margin: 20px 10% 0 10%;
     height: 200px;
-    background: url("../images/header.jpg") no-repeat center bottom;
+    /*background: url("../images/header.jpg") no-repeat center bottom;*/
+    background-color: cornflowerblue;
     background-size: 100%;
 }
 
@@ -210,5 +211,37 @@ footer p.clients{
 
 footer p.clients:before{
     background-position: 0 -69px;
+}
+
+.data-user{
+    background-color: chocolate;
+    border-radius: 10px;
+}
+
+.data-container{
+    margin: 0 0 30px 0;
+    height: 150px;
+
+}
+
+#list{
+    margin: 10px;
+}
+
+.user-info{
+    margin-top: 2%;
+
+}
+
+.input-var-one, .input-var-two{
+    margin: 10px;
+}
+
+.span-input-var-one, .span-input-var-two{
+    margin: 0 0 10px 0;
+}
+
+.input-one, .input-two{
+    width: 50%;
 }
 
