@@ -1,3 +1,11 @@
+<?php
+session_start();
+require_once (realpath(dirname(__FILE__)) . '/../db/User.php');
+$user = new User();
+$userData = $user->getUserByName("Valeron");
+$_SESSION['user'] = $userData['name'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,13 +24,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<?php
-session_start();
-require_once (realpath(dirname(__FILE__)) . '/../db/User.php');
-$user = new User();
-$userData = $user->getUserByName("Valeron");
-$_SESSION['user'] = $userData['name'];
-?>
+
 <header class="wrap">
     <div class="row">
         <div class="col-12">
