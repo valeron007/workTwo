@@ -1,5 +1,6 @@
-<?php
+﻿<?php
 session_start();
+
 require_once (realpath(dirname(__FILE__)) . '/../db/User.php');
 $user = new User();
 $userData = $user->getUserByName("Valeron");
