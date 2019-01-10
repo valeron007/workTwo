@@ -1,10 +1,10 @@
 ﻿<?php
-//session_start();
+session_start();
 
-//require_once (realpath(dirname(__FILE__)) . '/../db/User.php');
-//$user = new User();
-//$userData = $user->getUserByName("Valeron");
-//$_SESSION['user'] = $userData['name'];
+require_once (realpath(dirname(__FILE__)) . '/../db/User.php');
+$user = new User();
+$userData = $user->getUserByName("Valeron");
+$_SESSION['user'] = $userData['name'];
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +37,8 @@
                     <div class="card border-primary mb-3" style="max-width: 18rem;">
                         <div class="card-header">Вы зарегестрированы как</div>
                         <div class="card-body text-primary">
-<!--                            <h4 class="card-title login-user">--><?php //echo isset($_SESSION['user']) ? $_SESSION['user'] : 'nobody'; ?><!--</h4>-->
-                            <h4 class="card-title login-user">Valeron</h4>
+                            <h4 class="card-title login-user"><?php echo isset($_SESSION['user']) ? $_SESSION['user'] : 'nobody'; ?></h4>
+
                         </div>
                     </div>
                 </div>
